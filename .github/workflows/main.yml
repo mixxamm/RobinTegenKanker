@@ -27,4 +27,5 @@ jobs:
           port: ${{ secrets.PORT }}
           source: "."
           target: "/var/www/robintegenkanker.be/html"
+          rm: true
           overwrite: true
