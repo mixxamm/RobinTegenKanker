@@ -1,0 +1,99 @@
+@font-face {
+    font-family: "Antartida Bold";
+    src: url("../assets/antartida-rounded-bold.woff") format("woff");
+    font-weight: bold;
+    font-style: bold;
+}
+
+@font-face {
+    font-family: "Antartida Medium";
+    src: url("../assets/antartida-rounded-medium.woff") format("woff");
+    font-weight: normal;
+    font-style: normal;
+}
+
+body {
+    margin: 0;
+    font-family: "Antartida Medium";
+}
+
+nav {
+    padding: 1em 3em;
+    margin-top: -16px;
+    background-color: #f8f8f8;
+}
+nav ul {
+    padding-top: 1em;
+    margin-left: 100px;
+    list-style: none;
+}
+ul li {
+    font-size: 1.25rem;
+    padding: 0 0.5em;
+    display: inline;
+}
+
+ul li a:hover {
+    color: #fcb514;
+}
+
+li a {
+    transition: 0.2s;
+    text-decoration: none;
+    color: #000;
+}
+
+#logo {
+    display: block;
+    position: absolute;
+}
+
+.steunactie-widget {
+}
+.steun-wrapper {
+    background-image: url("../assets/achtergrond1.jpeg");
+    background-color: rgba(0, 0, 0, 0.5);
+    background-blend-mode: darken;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: calc(100vw - 16px);
+    min-height: calc(100vh - 87px);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    font-size: 2rem;
+    font-family: "Antartida Bold";
+    text-align: center;
+}
+
+article {
+    font-size: 1.5rem;
+    padding: 1em;
+    text-align: left;
+    font-family: "Antartida Medium";
+}
+
+ol {
+    list-style-position: inside;
+}
+
+.underline-bold,
+em {
+    font-family: "Antartida Bold";
+    background: linear-gradient(180deg, transparent 78%, #fcb514 60%);
+}
+
+b {
+    font-family: "Antartida Bold";
+}
+
+@media (min-width: 768px) {
+    article {
+        width: 80%;
+        font-size: 2rem;
+    }
+}
