@@ -59,7 +59,7 @@ li a {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    width: calc(100vw - 16px);
+    width: 100vw;
     min-height: calc(100vh - 87px);
     display: flex;
     justify-content: center;
@@ -92,6 +92,9 @@ b {
 }
 
 @media (min-width: 768px) {
+    .steun-wrapper {
+        width: calc(100vw - 16px);
+    }
     article {
         width: 80%;
         font-size: 2rem;
