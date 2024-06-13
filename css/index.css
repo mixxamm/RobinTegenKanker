@@ -56,6 +56,17 @@ li a {
     color: #000;
 }
 
+a.socials {
+    color: white;
+    text-decoration: none;
+    color: #fcb514;
+}
+
+a.socials:hover {
+    color: #000;
+    background-color: #fcb514;
+}
+
 #logo {
     display: block;
     position: absolute;
