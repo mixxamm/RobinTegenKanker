@@ -41,6 +41,15 @@ a.active {
     color: #fcb514;
 }
 
+em a {
+    text-decoration: none;
+    color: white;
+}
+
+em a:hover {
+    background-color: #fcb514;
+}
+
 li a {
     transition: 0.2s;
     text-decoration: none;
@@ -53,9 +62,10 @@ li a {
 }
 
 .steunactie-widget {
+    margin-top: 1.5em;
 }
-.steun-wrapper {
-    background-image: url("../assets/achtergrond1.jpeg");
+.steun-wrapper,
+.achtergrond-main {
     background-color: rgba(0, 0, 0, 0.5);
     background-blend-mode: darken;
     background-size: cover;
@@ -63,20 +73,30 @@ li a {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    width: 100vw;
-    min-height: calc(100vh - 87px);
     display: flex;
     justify-content: center;
     align-items: center;
-    color: white;
     font-size: 2rem;
     font-family: "Antartida Bold";
     text-align: center;
 }
 
+.steun-wrapper {
+    background-image: url("../assets/achtergrond1.jpeg");
+    width: 100vw;
+    flex-direction: column-reverse;
+    min-height: calc(100vh - 87px);
+}
+
+.achtergrond-main {
+    background-image: url("../assets/kilimanjaro.jpg");
+    min-height: calc(100vh - 87px);
+}
+
 article {
+    color: white;
     font-size: 1.5rem;
-    padding: 1em;
+    padding: 0 1em;
     text-align: left;
     font-family: "Antartida Medium";
 }
@@ -109,7 +129,6 @@ b {
 }
 
 .home-introductie img {
-    margin-top: 0.5em;
     border-radius: 100px;
     width: 100%;
     height: 100%;
@@ -133,6 +152,7 @@ b {
     }
     .steun-wrapper {
         width: calc(100vw - 16px);
+        flex-direction: column;
     }
     article {
         width: 80%;
