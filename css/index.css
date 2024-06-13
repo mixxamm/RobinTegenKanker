@@ -92,13 +92,15 @@ li a {
     background-image: url("../assets/kilimanjaro.jpg");
     min-height: calc(100vh - 87px);
 }
-
 article {
     color: white;
     font-size: 1.5rem;
     padding: 0 1em;
     text-align: left;
     font-family: "Antartida Medium";
+}
+.achtergrond-main article {
+    padding: 1em;
 }
 
 ol {
