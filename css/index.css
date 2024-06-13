@@ -91,6 +91,7 @@ li a {
 .achtergrond-main {
     background-image: url("../assets/kilimanjaro.jpeg");
     min-height: calc(100vh - 87px);
+    background-position: 80%;
 }
 article {
     color: white;
