@@ -70,6 +70,7 @@ a.socials:hover {
 #logo {
     display: block;
     position: absolute;
+    z-index: 1;
 }
 
 .steunactie-widget {
@@ -154,6 +155,26 @@ b {
     object-position: center 20%;
     grid-area: afbeelding;
     box-shadow: 20px 20px 90px 0 rgba(0, 0, 0, 0.5);
+}
+.blog-main {
+    background-image: url("../assets/blog_achtergrond.jpeg");
+    background-color: rgba(0, 0, 0, 0.5);
+    background-blend-mode: darken;
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    position: fixed;
+    width: 100vw;
+    z-index: 0;
+    overflow: scroll;
+}
+.blog-wrapper {
+    display: grid;
+    justify-items: center;
+    grid-template-columns: 1fr;
+    grid-gap: 1em;
+    padding: 2em 1em 5em;
+    height: max-content;
 }
 
 @media (min-width: 768px) {
